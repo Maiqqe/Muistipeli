@@ -9,6 +9,7 @@ public class Muistipeli {
 		arvotutNumerot ();
 		ruudunTyhjennys ();
 		pelaajanArvaus ();
+//ei toimi			arvotutJaArvatut (arvotut, arvaukset);
 
 	}//Mainin loppu
 	
@@ -53,4 +54,11 @@ public class Muistipeli {
         }
     System.out.println("Sinun arvauksesi olivat: " + arvaukset);
 	}
+	
+//	public static void arvotutJaArvatut (arvotut, arvaukset)  ei toimi
+//	{
+//        System.out.println("Oikeat numerot olivat: " + arvotut);
+//        System.out.println("Sinun arvauksesi olivat: " + arvaukset);
+//	}
+	
 }//Vimppa
