@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Muistipeli {
 
@@ -7,6 +8,7 @@ public class Muistipeli {
 		tervehdys();
 		arvotutNumerot ();
 		ruudunTyhjennys ();
+		pelaajanArvaus ();
 
 	}//Mainin loppu
 	
@@ -39,4 +41,16 @@ public class Muistipeli {
 		for (int i = 0; i < 20; ++i) System.out.println(); //20 tyhjää välilyöntiä "tyhjentämään" konsoli
 	}
 	
+	public static void pelaajanArvaus () //Pelaajan arvaukset
+	{Scanner in = new Scanner(System.in); 
+	ArrayList<Integer> arvaukset = new ArrayList<Integer>();
+
+	
+    for (int i = 0; i < 7; i++) {
+        System.out.print("Syötä " + (i + 1) + ". numero:\n");
+        int arvaus = in.nextInt();
+        arvaukset.add(arvaus);
+        }
+    System.out.println("Sinun arvauksesi olivat: " + arvaukset);
+	}
 }//Vimppa
