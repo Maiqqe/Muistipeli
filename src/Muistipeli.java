@@ -6,6 +6,7 @@ public class Muistipeli {
 	public static void main(String[] args) {
 		tervehdys();
 		arvotutNumerot ();
+		ruudunTyhjennys ();
 
 	}//Mainin loppu
 	
@@ -26,4 +27,16 @@ public class Muistipeli {
 			System.out.println(arvotut);
 			return arvotut; //Palauttaa arvotut numerot
 	}
+	
+	public static void ruudunTyhjennys ()
+	{
+		try { // suoritus pysähtyy 3,5 sekunniksi 
+			Thread.sleep(3500); 
+			} 
+		catch(InterruptedException ex) { 
+			Thread.currentThread().interrupt(); 
+			} 
+		for (int i = 0; i < 20; ++i) System.out.println(); //20 tyhjää välilyöntiä "tyhjentämään" konsoli
+	}
+	
 }//Vimppa
